@@ -51,6 +51,23 @@ public class Main {
         }While(opcion != 11);
 
 
-        
+        static void MostrarMenu(){
+            System.out.println("\n================================");
+            System.out.println("\n======== MENU PRINCIPAL ========");
+            System.out.println("\n 1. Calculadora Basica");
+            System.out.println("\n 2. Numero par o impar");
+            System.out.println("\n 3. Tabla de multiplicar");
+            System.out.println("\n 4. Contador de Vocales");
+            System.out.println("\n 5. Promedio de Notas");
+            System.out.println("\n 6. Clase Estudiante");
+            System.out.println("\n 7. Cuenta Bancaria");
+            System.out.println("\n 8. Herencia de Vehiculos");
+            System.out.println("\n 9. Matriz 3 x 3");
+            System.out.println("\n 10. Sistema de Inventario");
+            System.out.println("\n 11. Salir");
+            System.out.println("\n=================================");
+            System.out.println("\n     seleccione:");
+
+        }
     }
 }
