@@ -1,7 +1,10 @@
-java.util.Scanner;
+import java.util.Scanner ;
 
 public class Main {
-    public static void main(string[]args){
+    /**
+     * @param args
+     */
+    public static void main(String[]args){
         Scanner sc = new Scanner(System.in);
         int opcion;
 
@@ -45,10 +48,11 @@ public class Main {
                     System.out.println("Saliendo...");
                     break;
                 default:
-                    System.out.printl("Opcion invalida");   
+                    System.out.println("Opcion invalida");   
             }
 
-        }While(opcion != 11);
+        } while (opcion != 11);
+    }
 
 
         static void MostrarMenu(){
@@ -70,4 +74,3 @@ public class Main {
 
         }
     }
-}
