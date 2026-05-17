@@ -6,6 +6,7 @@ public class Main {
      */
     public static void main(String[]args){
         Scanner sc = new Scanner(System.in);
+        TablaMultiplicar tabla = new TablaMultiplicar();
         int opcion;
 
         do 
@@ -19,11 +20,13 @@ public class Main {
                     break;
                 case 2:
                     System.out.println("Ingresa un numero entero:");
-                    int num = sc.nextInt();
-                    ParImpar.ParOImpar(num);
+                    int num1 = sc.nextInt();
+                    ParImpar.ParOImpar(num1);
                     break;
                 case 3:
-                    TablaMultiplicar.ejecutar(sc);
+                    System.out.println("ingrese un numero para conocer su tabla de multiplicar");
+                    int num2 = sc.nextInt();
+                    TablaMultiplicar.MostrarTablaMultiplicar(num2);
                     break;
                 case 4: 
                     ContadorVocales.ejecutar(sc);

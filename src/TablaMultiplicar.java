@@ -1,18 +1,7 @@
-import java.util.Scanner;
+
 
 public class TablaMultiplicar {
    
-    public static void main (String [] args){
-
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("ingrese un numero para conocer su tabla de multiplicar");
-        int num = sc.nextInt();
-
-        MostrarTablaMultiplicar(num);
-        
-       
-    } 
     public static void MostrarTablaMultiplicar(int num){
         
          int contador = 1;
