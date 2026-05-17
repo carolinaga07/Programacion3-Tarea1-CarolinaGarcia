@@ -20,5 +20,21 @@ public class Productos {
 
     }
 
+    public int getCantidad(){
+        return Cantidad;
+    }
+
+    public void setCantidad (int Cantidad){
+        this.Cantidad = Cantidad;
+
+    }
+
+    public double getPrecio(){
+        return Precio;
+    }
+    public void setPrecio(double Precio){
+        this.Precio = Precio;
+    }
+
     
 }
