@@ -50,5 +50,19 @@ public class Estudiante {
    public void setCarrera(String Carrera){
     this.Carrera = Carrera;
    }
+
+   public void MostrarEstudiante(){
+           System.out.println("======================");
+           System.out.println(" DATOS DEL ESTUDIANTE ");
+           System.out.println("======================");
+           System.out.println(    "Nombre: " + getNombre());
+           System.out.println(    "Apellido: " + getApellido());
+           System.out.println(    "Matricula: " + getMatricula());
+           System.out.println(    "Carrera: " + getCarrera());
+           System.out.println("======================");
+           System.out.println(    Nombre + Apellido + 
+            "con matricula" + Matricula + 
+            "es estudiante de " + Carrera);
+   }
     
 }
