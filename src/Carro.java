@@ -26,6 +26,14 @@ public class Carro extends Vehiculo {
     public void setTipoCombustible(String TipoCombustible){
         this.TipoCombustible = TipoCombustible;
     }
+
+    @Override
+    public void MostrarInformacion(){
+        super.MostrarInformacion();
+        System.out.println("Tipo de vehiculo: Carro");
+        System.out.println("Numero de puertas: " + Puertas);
+        System.out.println("Tipo de combustible:" + TipoCombustible);
+    }
    
     
 }
