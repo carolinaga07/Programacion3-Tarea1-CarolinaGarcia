@@ -35,6 +35,14 @@ public class Main {
                     PromedioNotas.calcularPromedio();
                     break;
                 case 6:
+                     System.out.println("Ingresa el nombre del estudiante:");
+    String Nombre = sc.next();
+    System.out.println("Ingresa el apellido del estudiante:");
+    String Apellido = sc.next();
+    System.out.println("Ingresa la matricula del estudiante:");
+    String Matricula = sc.nextLine();
+    System.out.println("Ingresa la carrera del estudiante:");
+    String Carrera = sc.nextLine();
                     Estudiante.ejecutar(sc);
                     break;
                 case 7:
