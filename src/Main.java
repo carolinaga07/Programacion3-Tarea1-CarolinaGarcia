@@ -6,13 +6,13 @@ public class Main {
      */
     public static void main(String[]args){
         Scanner sc = new Scanner(System.in);
-        TablaMultiplicar tabla = new TablaMultiplicar();
         int opcion;
 
         do 
         {
             MostrarMenu();
             opcion = sc.nextInt();
+            sc.nextLine();
 
             switch(opcion){
                 case 1:
@@ -37,10 +37,13 @@ public class Main {
                 case 6:
                    System.out.println("Ingresa el nombre del estudiante:");
                    String Nombre = sc.nextLine();
+
                    System.out.println("Ingresa el apellido del estudiante:");
                    String Apellido = sc.nextLine();
+
                    System.out.println("Ingresa la matricula del estudiante:");
                    String Matricula = sc.nextLine();
+
                    System.out.println("Ingresa la carrera del estudiante:");
                    String Carrera = sc.nextLine();
 
@@ -52,12 +55,17 @@ public class Main {
                 case 7:
                    System.out.println("Ingresa el Numero de cuenta:");
                    int NumeroDeCuenta = sc.nextInt();
+                   sc.nextLine();
+
                    System.out.println("Ingresa el Tipo de cuenta:");
                    String TipoDeCuenta = sc.nextLine();
+
                    System.out.println("Ingresa el Titular de la cuenta:");
                    String Titular = sc.nextLine();
+
                    System.out.println("Ingresa el saldo inicial de la cuenta:");
                    int Saldo = sc.nextInt();
+                   sc.nextLine();
 
                    CuentaBancaria Cuenta = new CuentaBancaria(NumeroDeCuenta, Titular, TipoDeCuenta, Saldo);
 
@@ -77,6 +85,7 @@ public class Main {
                     System.out.println("Elige una opcion:         ");
 
                     Opcion = sc.nextInt();
+                    sc.nextLine();
 
                     switch (Opcion) {
                         case 1:
@@ -85,11 +94,15 @@ public class Main {
                         case 2:
                             System.out.println("Ingrese el monto a Retirar:");
                             int Cantidad1 = sc.nextInt();
+                            sc.nextLine();
+
                             Cuenta.Retiro(Cantidad1);
                             break;
                         case 3:
                             System.out.println("Ingrese el monto a Depositar:");
                             int Cantidad2 = sc.nextInt();
+                            sc.nextLine();
+
                             Cuenta.Deposito(Cantidad2);
                             break;
                         case 4:
@@ -117,6 +130,7 @@ public class Main {
                     System.out.println("Elige una opcion:         ");
 
                     Variable = sc.nextInt();
+                    sc.nextLine();
 
                     switch (Variable) {
                         case 1:
@@ -131,6 +145,7 @@ public class Main {
                             System.out.println("Elige una opcion:         ");
 
                             int tipo = sc.nextInt();
+                            sc.nextLine();
 
                             if (tipo == 1){
                                  System.out.println("===========================");
@@ -138,14 +153,21 @@ public class Main {
                                  System.out.println("===========================");
                                  System.out.println("Marca:");
                                  String MarcaC = sc.nextLine();
+
                                  System.out.println("Modelo:");
                                  String ModeloC = sc.nextLine();
+
                                  System.out.println("Año:");
                                  int AnioC = sc.nextInt();
+                                 sc.nextLine();
+
                                  System.out.println("Color:");
                                  String ColorC = sc.nextLine();
+
                                  System.out.println("Numero de puertas:");
                                  int Puertas = sc.nextInt();
+                                 sc.nextLine();
+
                                  System.out.println("Tipo de Combustible:");
                                  String Combustible = sc.nextLine();
 
@@ -158,18 +180,25 @@ public class Main {
                                  System.out.println("===========================");
                                  System.out.println("Marca:");
                                  String MarcaM = sc.nextLine();
+
                                  System.out.println("Modelo:");
                                  String ModeloM = sc.nextLine();
+
                                  System.out.println("Año:");
                                  int AnioM = sc.nextInt();
+                                 sc.nextLine();
+
                                  System.out.println("Color:");
                                  String ColorM = sc.nextLine();
-                                 System.out.println(" Tipo de moto:");
-                                 int TipoMoto = sc.nextInt();
-                                 System.out.println(" Cilindraje:");
-                                 String Cilindraje = sc.nextLine();
 
-                                 Moto moto = new Moto(MarcaM, ModeloM, AnioM, ColorM, Cilindraje, TipoMoto);
+                                 System.out.println(" Tipo de moto:");
+                                 String TipoMoto = sc.nextLine();
+
+                                 System.out.println(" Cilindraje:");
+                                 int Cilindraje = sc.nextInt();
+                                 sc.nextLine();
+
+                                 Moto moto = new Moto(MarcaM, ModeloM, AnioM, ColorM, TipoMoto, Cilindraje);
                                  moto.MostrarInformacion();
                             }
                             else{
@@ -205,21 +234,21 @@ public class Main {
 
 
         static void MostrarMenu(){
-            System.out.println("\n================================");
-            System.out.println("\n======== MENU PRINCIPAL ========");
-            System.out.println("\n 1. Calculadora Basica");
-            System.out.println("\n 2. Numero par o impar");
-            System.out.println("\n 3. Tabla de multiplicar");
-            System.out.println("\n 4. Contador de Vocales");
-            System.out.println("\n 5. Promedio de Notas");
-            System.out.println("\n 6. Clase Estudiante");
-            System.out.println("\n 7. Cuenta Bancaria");
-            System.out.println("\n 8. Herencia de Vehiculos");
-            System.out.println("\n 9. Matriz 3 x 3");
-            System.out.println("\n 10. Sistema de Inventario");
-            System.out.println("\n 11. Salir");
-            System.out.println("\n=================================");
-            System.out.println("\n     seleccione:");
+            System.out.println("================================");
+            System.out.println("======== MENU PRINCIPAL ========");
+            System.out.println(" 1. Calculadora Basica");
+            System.out.println(" 2. Numero par o impar");
+            System.out.println(" 3. Tabla de multiplicar");
+            System.out.println(" 4. Contador de Vocales");
+            System.out.println(" 5. Promedio de Notas");
+            System.out.println(" 6. Clase Estudiante");
+            System.out.println(" 7. Cuenta Bancaria");
+            System.out.println(" 8. Herencia de Vehiculos");
+            System.out.println(" 9. Matriz 3 x 3");
+            System.out.println(" 10. Sistema de Inventario");
+            System.out.println(" 11. Salir");
+            System.out.println("=================================");
+            System.out.println("seleccione:");
 
         }
     }
