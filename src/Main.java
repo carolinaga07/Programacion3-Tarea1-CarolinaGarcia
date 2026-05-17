@@ -18,7 +18,7 @@ public class Main {
                     Calculadora.MostrarMenuCalculadora(); // ejecutar es el default para el metodo que se creara.
                     break;
                 case 2:
-                    ParImpar.ejecutar(sc);
+                    
                     break;
                 case 3:
                     TablaMultiplicar.ejecutar(sc);
