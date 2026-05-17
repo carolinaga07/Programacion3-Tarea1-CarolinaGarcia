@@ -10,6 +10,22 @@ public class Carro extends Vehiculo {
         this.Puertas = puertas;
         this.TipoCombustible = tipocombustible;
     }
+
+    public int getPuertas(){
+        return Puertas;
+    }
+
+    public void setPuertas(int Puertas){
+        this.Puertas = Puertas;
+    }
+
+    public String getTipoCombustible(){
+        return TipoCombustible;
+    }
+
+    public void setTipoCombustible(String TipoCombustible){
+        this.TipoCombustible = TipoCombustible;
+    }
    
     
 }
