@@ -32,7 +32,7 @@ public class Main {
                     ContadorVocales.ContarVocales();
                     break;
                 case 5:
-                    PromedioNotas.ejecutar(sc);
+                    PromedioNotas.calcularPromedio();
                     break;
                 case 6:
                     Estudiante.ejecutar(sc);
