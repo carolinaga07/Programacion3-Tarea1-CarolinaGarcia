@@ -17,22 +17,25 @@ public class Calculadora {
         MostrarMenuCalculadora();
         int opcion = sc.nextInt();
         do{ 
-            
-           
             switch (opcion) {
                 case 1:
                     System.out.println("Resultado Suma: " + Sumar(numero1, numero2));
                     break;
                 case 2:
-                    Calculadora.Restar();
+                    System.out.println("Resultado Resta: " + Restar(numero1, numero2));
                     break;
                 case 3:
-                    Calculadora.Multiplicar();
+                    System.out.println("Resultado Multiplicacion: " + Multiplicar(numero1, numero2));
                     break;
                 case 4:
-                    Calculadora.Dividir();
-            
-              
+                    System.out.println("Resultado Division: " + Dividir(numero1, numero2));
+                    break;
+                case 5:
+                    System.out.println("Saliendo..");
+                    break;
+                default:
+                    System.out.println("Opcion invalida");
+        
             }
         }while(opcion != 5);
 
@@ -63,6 +66,22 @@ public class Calculadora {
 
        return numero1 / numero2;
        
+
+    }
+
+    public static void MostrarMenuCalculadora(){
+        System.out.println("==========================");
+        System.out.println("        CALCULADORA       ");
+        System.out.println("==========================");
+        System.out.println("        1. Sumar          ");
+        System.out.println("        2. Restar         ");
+        System.out.println("        3. Multiplicar    ");
+        System.out.println("        4. Dividir        ");
+        System.out.println("        5. Salir          ");
+        System.out.println("==========================");
+        System.out.println("==========================");
+        System.out.println("Elige una opcion:         ");
+
 
     }
     
