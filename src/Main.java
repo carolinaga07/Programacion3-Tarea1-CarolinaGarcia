@@ -104,7 +104,71 @@ public class Main {
                     }while (Opcion != 4); 
                     break;
                 case 8:
-                    Vehiculo.ejecutar(sc);
+                    int Variable;
+
+                    do{
+                    System.out.println("==========================");
+                    System.out.println("   REGISTRO DE VEHICULOS  ");
+                    System.out.println("==========================");
+                    System.out.println("   1. Registrar vehiculo  ");
+                    System.out.println("   2. Salir               ");
+                    System.out.println("==========================");
+                    System.out.println("==========================");
+                    System.out.println("Elige una opcion:         ");
+
+                    Variable = sc.nextInt();
+
+                    switch (Variable) {
+                        case 1:
+
+                            System.out.println("==========================");
+                            System.out.println("   QUE DESEAS REGISTRAR?  ");
+                            System.out.println("==========================");
+                            System.out.println("   1. Carro               ");
+                            System.out.println("   2. Moto                ");
+                            System.out.println("==========================");
+                            System.out.println("==========================");
+                            System.out.println("Elige una opcion:         ");
+
+                            int tipo = sc.nextInt();
+
+                            if (tipo == 1){
+                                 System.out.println("===========================");
+                                 System.out.println("     REGISTRO DE CARRO     ");
+                                 System.out.println("===========================");
+                                 System.out.println("Marca:");
+                                 String MarcaC = sc.nextLine();
+                                 System.out.println("Modelo:");
+                                 String ModeloC = sc.nextLine();
+                                 System.out.println("Año:");
+                                 int AnioC = sc.nextInt();
+                                 System.out.println("Color:");
+                                 String ColorC = sc.nextLine();
+                                 System.out.println("Numero de puertas:");
+                                 int Puertas = sc.nextInt();
+                                 System.out.println("Tipo de Combustible:");
+                                 String Combustible = sc.nextLine();
+
+                                 Carro carro = new Carro(MarcaC, ModeloC, AnioC, ColorC, Puertas, Combustible);
+                                 carro.MostrarInformacion();
+                            }
+                            else if(tipo == 2){
+                                
+                            }
+                            break;
+                    
+                        default:
+                            break;
+                    }
+                    }
+
+
+
+
+
+                  
+                  
+
                     break;
                 case 9:
                     Matriz.ejecutar(sc);
