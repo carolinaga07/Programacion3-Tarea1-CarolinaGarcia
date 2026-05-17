@@ -44,7 +44,15 @@ public class Vehiculo {
    }
 
    public void MostrarInformacion(){
-    
+    System.out.println("======================");
+    System.out.println("  DATOS DEL VEHICULO  ");
+    System.out.println("======================");
+    System.out.println(    "Marca: " + getMarca());
+    System.out.println(    "Modelo: " + getModelo());
+    System.out.println(    "Año: " + getAnio());
+    System.out.println(    "Color: " + getColor());
+    System.out.println("======================");
+
    }
 
 
