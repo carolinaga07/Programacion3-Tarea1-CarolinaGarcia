@@ -15,7 +15,7 @@ public class Main {
 
             switch(opcion){
                 case 1:
-                    Calculadora.ejecutar(sc); // ejecutar es el default para el metodo que se creara.
+                    Calculadora.MostrarMenuCalculadora(); // ejecutar es el default para el metodo que se creara.
                     break;
                 case 2:
                     ParImpar.ejecutar(sc);
