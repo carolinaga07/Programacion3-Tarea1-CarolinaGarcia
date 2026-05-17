@@ -36,9 +36,9 @@ public class Main {
                     break;
                 case 6:
                    System.out.println("Ingresa el nombre del estudiante:");
-                   String Nombre = sc.next();
+                   String Nombre = sc.nextLine();
                    System.out.println("Ingresa el apellido del estudiante:");
-                   String Apellido = sc.next();
+                   String Apellido = sc.nextLine();
                    System.out.println("Ingresa la matricula del estudiante:");
                    String Matricula = sc.nextLine();
                    System.out.println("Ingresa la carrera del estudiante:");
@@ -191,7 +191,7 @@ public class Main {
                     matriz.ImprimirMatriz(null);;
                     break;
                 case 10:
-                    Inventario.ejecutar(sc);
+                    Inventario.Ejecutar(sc);
                     break;
                 case 11:
                     System.out.println("Saliendo...");
