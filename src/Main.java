@@ -29,7 +29,7 @@ public class Main {
                     TablaMultiplicar.MostrarTablaMultiplicar(num2);
                     break;
                 case 4: 
-                    ContadorVocales.ejecutar(sc);
+                    ContadorVocales.ContarVocales();
                     break;
                 case 5:
                     PromedioNotas.ejecutar(sc);
