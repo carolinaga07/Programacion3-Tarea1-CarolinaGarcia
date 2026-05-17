@@ -18,7 +18,9 @@ public class Main {
                     Calculadora.MostrarMenuCalculadora(); // ejecutar es el default para el metodo que se creara.
                     break;
                 case 2:
-                    
+                    System.out.println("Ingresa un numero entero:");
+                    int num = sc.nextInt();
+                    ParImpar.ParOImpar(num);
                     break;
                 case 3:
                     TablaMultiplicar.ejecutar(sc);

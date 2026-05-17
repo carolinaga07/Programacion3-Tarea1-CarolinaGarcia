@@ -3,7 +3,7 @@
 public class ParImpar {
     
 
-    public static void ParoImpar(int num){
+    public static void ParOImpar(int num){
         if (num % 2 == 0){
             System.out.println("El numero es par");
         }
