@@ -9,28 +9,19 @@ public class Calculadora {
         
 
         System.out.println("Introduce el primer numero:");
-        if (sc.hasNextDouble()){
-            double numero1 = sc.nextDouble();
-        }
-        else{
-            System.out.println("Entrada invalida, debe ser un numero");
-        }
-
+        double numero1 = sc.nextDouble();
+        
         System.out.println("Introduce el segundo numero:");
-        if(sc.hasNextDouble()){
-            double numero2 = sc.nextDouble();
-        }
-        else{
-            System.out.println("Entrada invalida, debe ser un numero");
-        }
-
-
-        do{
-            MostrarMenuCalculadora();
-            int opcion = sc.nextInt();
+        double numero2 = sc.nextDouble();
+       
+        MostrarMenuCalculadora();
+        int opcion = sc.nextInt();
+        do{ 
+            
+           
             switch (opcion) {
                 case 1:
-                    Calculadora.Sumar( );
+                    System.out.println("Resultado Suma: " + Sumar(numero1, numero2));
                     break;
                 case 2:
                     Calculadora.Restar();
@@ -43,32 +34,32 @@ public class Calculadora {
             
               
             }
-        }
+        }while(opcion != 5);
 
     }
 
 
-    public double Sumar( double numero1, double numero2){
+    public static double Sumar( double numero1, double numero2){
 
        return numero1 + numero2;
 
     }
 
-    public double Restar( double numero1, double numero2){
+    public static double Restar( double numero1, double numero2){
 
        return numero1 - numero2;
        
 
     }
 
-    public double Multiplicar( double numero1, double numero2){
+    public static double Multiplicar( double numero1, double numero2){
 
        return  numero1 * numero2;
       
 
     }
 
-    public double Dividir( double numero1, double numero2){
+    public static double Dividir( double numero1, double numero2){
 
        return numero1 / numero2;
        
