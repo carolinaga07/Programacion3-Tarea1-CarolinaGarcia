@@ -187,7 +187,8 @@ public class Main {
                     }while(Variable != 2);
                     break;
                 case 9:
-                    Matriz.ejecutar(sc);
+                    Matriz matriz = new Matriz();
+                    matriz.ImprimirMatriz(null);;
                     break;
                 case 10:
                     Inventario.ejecutar(sc);
