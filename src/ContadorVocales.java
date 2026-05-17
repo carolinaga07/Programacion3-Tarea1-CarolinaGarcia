@@ -2,6 +2,10 @@ import java.util.Scanner;
 
 public class ContadorVocales {
     
+
+    public static void main (String [] args){
+        ContarVocales();
+    }
     public static void ContarVocales(){
        
         Scanner sc = new Scanner(System.in);
