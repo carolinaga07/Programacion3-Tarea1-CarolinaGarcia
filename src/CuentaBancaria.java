@@ -1,5 +1,5 @@
 
-import java.util.Scanner;
+
 
 public class CuentaBancaria {
 
@@ -48,18 +48,35 @@ public class CuentaBancaria {
         this.Saldo = Saldo;
     }
 
-    public int Retiro( int CantidadRetirar){
+    public void Retiro( int CantidadRetirar){
 
-        int resultado = Saldo - CantidadRetirar;
-        return resultado;
+        Saldo = Saldo - CantidadRetirar;
+         
+        System.out.println("Retiro Exitoso");
+        System.out.println("Nuevo Saldo:" + Saldo);
 
     }
 
-    public int Deposito ( int CantidadDepositar){
+    public void Deposito ( int CantidadDepositar){
 
-        int resultado = Saldo - CantidadDepositar;
-        return resultado;
+        Saldo = Saldo + CantidadDepositar;
 
+        System.out.println("Deposito Exitoso");
+        System.out.println("Nuevo Saldo:" + Saldo);
+        
+
+    }
+
+    public void MostrarMenuCuenta (){
+        System.out.println("======================");
+        System.out.println("   DATOS DE CUENTA    ");
+        System.out.println("======================");
+        System.out.println(    "Numero de cuenta: " + getNumeroDeCuenta());
+        System.out.println(    "Tipo de cuenta: " + getTipoDeCuenta());
+        System.out.println(    "Titular: " + getTitular());
+        System.out.println(    "Saldo: " + getSaldo());
+        System.out.println("======================");
+        
     }
 
     
