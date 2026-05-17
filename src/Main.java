@@ -153,22 +153,38 @@ public class Main {
                                  carro.MostrarInformacion();
                             }
                             else if(tipo == 2){
-                                
+                               System.out.println("===========================");
+                                 System.out.println("     REGISTRO DE MOTO     ");
+                                 System.out.println("===========================");
+                                 System.out.println("Marca:");
+                                 String MarcaM = sc.nextLine();
+                                 System.out.println("Modelo:");
+                                 String ModeloM = sc.nextLine();
+                                 System.out.println("Año:");
+                                 int AnioM = sc.nextInt();
+                                 System.out.println("Color:");
+                                 String ColorM = sc.nextLine();
+                                 System.out.println(" Tipo de moto:");
+                                 int TipoMoto = sc.nextInt();
+                                 System.out.println(" Cilindraje:");
+                                 String Cilindraje = sc.nextLine();
+
+                                 Moto moto = new Moto(MarcaM, ModeloM, AnioM, ColorM, Cilindraje, TipoMoto);
+                                 moto.MostrarInformacion();
                             }
+                            else{
+                                System.out.println("Tipo Invalido");
+                            }
+                            break;
+                        case 2:
+                            System.out.println("Saliendo...");
                             break;
                     
                         default:
+                            System.out.println("Opcion Invalida");
                             break;
                     }
-                    }
-
-
-
-
-
-                  
-                  
-
+                    }while(Variable != 2);
                     break;
                 case 9:
                     Matriz.ejecutar(sc);
