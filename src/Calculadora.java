@@ -6,7 +6,7 @@ public class Calculadora {
     static void main (String [] args){
 
         Scanner sc = new Scanner(System.in);
-        
+        int opcion;
 
         System.out.println("Introduce el primer numero:");
         double numero1 = sc.nextDouble();
@@ -14,9 +14,9 @@ public class Calculadora {
         System.out.println("Introduce el segundo numero:");
         double numero2 = sc.nextDouble();
        
-        MostrarMenuCalculadora();
-        int opcion = sc.nextInt();
         do{ 
+             MostrarMenuCalculadora();
+             opcion = sc.nextInt();
             switch (opcion) {
                 case 1:
                     System.out.println("Resultado Suma: " + Sumar(numero1, numero2));
