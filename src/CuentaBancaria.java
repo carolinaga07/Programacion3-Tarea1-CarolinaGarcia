@@ -67,7 +67,7 @@ public class CuentaBancaria {
 
     }
 
-    public void MostrarMenuCuenta (){
+    public void MostrarCuenta (){
         System.out.println("======================");
         System.out.println("   DATOS DE CUENTA    ");
         System.out.println("======================");

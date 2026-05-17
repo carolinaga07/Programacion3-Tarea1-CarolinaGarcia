@@ -48,9 +48,60 @@ public class Main {
 
                    nuevo.MostrarEstudiante();
                     break;
-                    
+
                 case 7:
-                    CuentaBancaria.ejecutar(sc);
+                   System.out.println("Ingresa el Numero de cuenta:");
+                   int NumeroDeCuenta = sc.nextInt();
+                   System.out.println("Ingresa el Tipo de cuenta:");
+                   String TipoDeCuenta = sc.nextLine();
+                   System.out.println("Ingresa el Titular de la cuenta:");
+                   String Titular = sc.nextLine();
+                   System.out.println("Ingresa el saldo inicial de la cuenta:");
+                   int Saldo = sc.nextInt();
+
+                   CuentaBancaria Cuenta = new CuentaBancaria(NumeroDeCuenta, Titular, TipoDeCuenta, Saldo);
+
+                   
+                    int Opcion;
+
+                    do{
+                    System.out.println("==========================");
+                    System.out.println("      CUENTA BANCARIA     ");
+                    System.out.println("==========================");
+                    System.out.println("        1. Ver datos      ");
+                    System.out.println("        2. Retirar        ");
+                    System.out.println("        3. Depositar      ");
+                    System.out.println("        4. Salir          ");
+                    System.out.println("==========================");
+                    System.out.println("==========================");
+                    System.out.println("Elige una opcion:         ");
+
+                    Opcion = sc.nextInt();
+
+                    switch (Opcion) {
+                        case 1:
+                            Cuenta.MostrarCuenta();
+                            break;
+                        case 2:
+                            System.out.println("Ingrese el monto a Retirar:");
+                            int Cantidad1 = sc.nextInt();
+                            Cuenta.Retiro(Cantidad1);
+                            break;
+                        case 3:
+                            System.out.println("Ingrese el monto a Depositar:");
+                            int Cantidad2 = sc.nextInt();
+                            Cuenta.Deposito(Cantidad2);
+                            break;
+                        case 4:
+                            System.out.println("Saliendo...");
+                            break;
+                    
+                        default:
+                            System.out.println("Opcion invalida");
+                            break;
+                    }
+
+                    }while (Opcion != 4); 
                     break;
                 case 8:
                     Vehiculo.ejecutar(sc);
