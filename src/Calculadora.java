@@ -3,20 +3,44 @@ import java.util.Scanner;
 
 public class Calculadora {
 
-    static void main (String [] args){
+    public static void IniciarCalculadora (){
 
         Scanner sc = new Scanner(System.in);
-        int opcion;
-
-        System.out.println("Introduce el primer numero:");
-        double numero1 = sc.nextDouble();
         
-        System.out.println("Introduce el segundo numero:");
-        double numero2 = sc.nextDouble();
+        int opcion = 0;
+        double numero1 = 0;
+        double numero2 = 0;
+
+       
        
         do{ 
-             MostrarMenuCalculadora();
-             opcion = sc.nextInt();
+            
+            System.out.println("==========================");
+            System.out.println("        CALCULADORA       ");
+            System.out.println("==========================");
+            System.out.println("        1. Sumar          ");
+            System.out.println("        2. Restar         ");
+            System.out.println("        3. Multiplicar    ");
+            System.out.println("        4. Dividir        ");
+            System.out.println("        5. Salir          ");
+            System.out.println("==========================");
+            System.out.println("==========================");
+            System.out.println("Elige una opcion:         ");
+            
+
+            if(opcion >= 1 && opcion <= 4){
+
+                System.out.println("Introduce el primer numero:");
+                numero1 = sc.nextDouble();
+        
+                System.out.println("Introduce el segundo numero:");
+                numero2 = sc.nextDouble();
+            }
+            
+
+    
+            opcion = sc.nextInt();
+
             switch (opcion) {
                 case 1:
                     System.out.println("Resultado Suma: " + Sumar(numero1, numero2));
@@ -69,20 +93,6 @@ public class Calculadora {
 
     }
 
-    public static void MostrarMenuCalculadora(){
-        System.out.println("==========================");
-        System.out.println("        CALCULADORA       ");
-        System.out.println("==========================");
-        System.out.println("        1. Sumar          ");
-        System.out.println("        2. Restar         ");
-        System.out.println("        3. Multiplicar    ");
-        System.out.println("        4. Dividir        ");
-        System.out.println("        5. Salir          ");
-        System.out.println("==========================");
-        System.out.println("==========================");
-        System.out.println("Elige una opcion:         ");
-
-
-    }
+    
     
 }

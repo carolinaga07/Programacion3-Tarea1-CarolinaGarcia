@@ -16,7 +16,7 @@ public class Main {
 
             switch(opcion){
                 case 1:
-                    Calculadora.MostrarMenuCalculadora(); // ejecutar es el default para el metodo que se creara.
+                    Calculadora.IniciarCalculadora(); // ejecutar es el default para el metodo que se creara.
                     break;
                 case 2:
                     System.out.println("Ingresa un numero entero:");
