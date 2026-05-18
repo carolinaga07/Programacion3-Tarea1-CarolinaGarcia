@@ -16,7 +16,9 @@ public class Inventario {
         System.out.println( "  3. Volver al menu  ");
         System.out.println("======================");
          System.out.println( "Seleccione una opcion:");
+
          opcion = sc.nextInt();
+         sc.nextLine();
 
          switch (opcion) {
             case 1:
@@ -31,7 +33,7 @@ public class Inventario {
 
                 lista.add(new Productos(nombre, cantidad, precio));
                 System.out.println("Producto Agregado"); 
-                                
+
                 break;
             case 2:
                 if(lista.isEmpty()){
