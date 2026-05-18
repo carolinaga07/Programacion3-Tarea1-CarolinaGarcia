@@ -10,3 +10,8 @@ Materia: Programacion 3
 Descripcion:
 
 Menu interactivo con 10 programas diferentes que van desde la manipulacion de los numeros hasa la manipulacion de frases.
+
+Tecnologias utilizadas:
+-java
+-jdk26
+-Visual Studio Code
