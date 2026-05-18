@@ -27,6 +27,7 @@ public class Calculadora {
             System.out.println("==========================");
             System.out.println("Elige una opcion:         ");
             
+            opcion = sc.nextInt();
 
             if(opcion >= 1 && opcion <= 4){
 
@@ -39,7 +40,7 @@ public class Calculadora {
             
 
     
-            opcion = sc.nextInt();
+            
 
             switch (opcion) {
                 case 1:
