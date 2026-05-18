@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Matriz {
     
-    public void main (String [] args){
+    public void IniciarMatriz (){
         Scanner sc = new Scanner(System.in);
         int [] [] matriz = new int [3] [3] ;
         System.out.println("Ingrese los elementos de la matriz:");

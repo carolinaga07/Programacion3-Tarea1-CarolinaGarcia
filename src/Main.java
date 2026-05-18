@@ -217,7 +217,7 @@ public class Main {
                     break;
                 case 9:
                     Matriz matriz = new Matriz();
-                    matriz.ImprimirMatriz(null);;
+                    matriz.IniciarMatriz();
                     break;
                 case 10:
                     Inventario.Ejecutar(sc);
