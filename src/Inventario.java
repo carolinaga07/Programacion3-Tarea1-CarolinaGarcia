@@ -22,12 +22,16 @@ public class Inventario {
             case 1:
                 System.out.println("Nombre:");
                 String nombre = sc.nextLine();
+
                 System.out.println("Cantidad:");
                 int cantidad = sc.nextInt();
+
                 System.out.println("Precio:");
                 double precio = sc.nextDouble();
+
                 lista.add(new Productos(nombre, cantidad, precio));
-                System.out.println("Producto Agregado");                 
+                System.out.println("Producto Agregado"); 
+                                
                 break;
             case 2:
                 if(lista.isEmpty()){
