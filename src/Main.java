@@ -54,7 +54,7 @@ public class Main {
 
                 case 7:
                    System.out.println("Ingresa el Numero de cuenta:");
-                   int NumeroDeCuenta = sc.nextInt();
+                   long NumeroDeCuenta = sc.nextLong();
                    sc.nextLine();
 
                    System.out.println("Ingresa el Tipo de cuenta:");

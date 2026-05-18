@@ -3,13 +3,13 @@
 
 public class CuentaBancaria {
 
-    private int NumeroDeCuenta;
+    private long NumeroDeCuenta;
     private String Titular;
     private String TipoDeCuenta;
     private int Saldo;
     
 
-    public CuentaBancaria( int numerodecuenta, String titular, String tipodecuenta, int saldo){
+    public CuentaBancaria( long numerodecuenta, String titular, String tipodecuenta, int saldo){
         this.TipoDeCuenta = tipodecuenta;
         this.Titular = titular;
         this.NumeroDeCuenta = numerodecuenta;
@@ -32,11 +32,11 @@ public class CuentaBancaria {
         this.Titular = Titular;
     }
 
-    public int getNumeroDeCuenta(){
+    public long getNumeroDeCuenta(){
         return NumeroDeCuenta;
     }
 
-    public void setNumeroDeCuenta(int NumeroDeCuenta){
+    public void setNumeroDeCuenta(long NumeroDeCuenta){
         this.NumeroDeCuenta = NumeroDeCuenta;
     }
 
