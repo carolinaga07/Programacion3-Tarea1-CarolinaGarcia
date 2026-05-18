@@ -61,7 +61,7 @@ public class Estudiante {
            System.out.println(    "Carrera: " + getCarrera());
            System.out.println("======================");
            System.out.println(this.Nombre + " "+ this.Apellido + 
-            " con matricula" + this.Matricula + 
+            " con matricula " + this.Matricula + 
             " es estudiante de " + this.Carrera);
    }
     
